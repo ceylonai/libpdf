@@ -1,4 +1,0 @@
-$ cargo-cp-artifact -nc document.node -- cargo build --message-format=json-render-diagnostics
-   Compiling neon v1.0.0
-   Compiling docreader v0.1.0 (H:\projects\CeylonAI\qbit\packages\docreader)
-    Finished dev [unoptimized + debuginfo] target(s) in 3.71s

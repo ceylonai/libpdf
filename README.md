@@ -49,7 +49,7 @@ After building `libpdf`, you can explore its exports at the Node REPL.
 
 ## Using a JavaScript file
 
-1. Create a file named `index.js` with the following content:
+1. Create a file named `index.ts` with the following content:
 
    ```javascript
    const pdfFile = require('fs').readFileSync("doc.pdf");
@@ -60,12 +60,19 @@ After building `libpdf`, you can explore its exports at the Node REPL.
 2. Run the file with Node:
 
    ```bash
-   $ node index.js
+   $ node index.ts
    ```
 
 This setup ensures you can easily install, build, and explore the capabilities of `libpdf`.
 
+# Benchmark Result
+
+![Benchmarking PDF Libraries.png](./benchmark%2FBenchmarking%20PDF%20Libraries.png)
+
+## conclusion
+
 # Future Steps (TODO)
+- [x] Run Benchmark
 - [ ] Add support for extracting text from specific pages
 - [ ] Improve text extraction accuracy for complex PDFs
 - [ ] Implement batch processing for multiple PDFs
@@ -77,3 +84,5 @@ We welcome contributions to improve LibPdf! Feel free to submit issues and pull 
 
 # License
 This project is licensed under the Apache-2.0 license.
+
+https://x.com/CeylonAIDev
