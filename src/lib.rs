@@ -7,11 +7,19 @@ fn version(mut cx: FunctionContext) -> JsResult<JsString> {
 
 
 fn document(mut cx: FunctionContext) -> JsResult<JsString> {
-    let mut buf = cx.argument::<JsBuffer>(0)?;
-    let file_buffer = buf.as_mut_slice(&mut cx) as &[u8];
-    let text = pdf_extract::extract_text_from_mem(file_buffer).unwrap();
-    Ok(cx.string(text))
+    // Get the buffer argument
+    let buf = cx.argument::<JsBuffer>(0)?;
+
+    // Convert buffer to a slice
+    let file_buffer = buf.as_slice(&cx);
+
+    // Extract text from the PDF
+    match pdf_extract::extract_text_from_mem(file_buffer) {
+        Ok(text) => Ok(cx.string(text)),
+        Err(err) => cx.throw_error(format!("Failed to extract text: {}", err)),
+    }
 }
+
 
 #[neon::main]
 fn main(mut cx: ModuleContext) -> NeonResult<()> {

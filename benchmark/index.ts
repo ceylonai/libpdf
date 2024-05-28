@@ -3,7 +3,7 @@ const {performance} = require('perf_hooks');
 const pdfParse = require('pdf-parse');
 const pdfLib = require('pdf-lib');
 const PDFParser = require('pdf2json');
-const libPdf = require('libpdf'); // Replace with your library's import
+const libPdf = require('../libpdf.node'); // Replace with your library's import
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const files = ['./docs/small.pdf', './docs/medium.pdf', './docs/large.pdf', './docs/complex.pdf'];
