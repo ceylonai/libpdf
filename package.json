@@ -1,6 +1,6 @@
 {
   "name": "libpdf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "LibPdf is a fast and efficient Node.js library for converting PDF files to text. Designed for simplicity and ease of use, LibPdf allows developers to quickly extract text content from PDFs, making it ideal for various applications such as data extraction, text analysis, and more.",
   "main": "index.js",
   "scripts": {

@@ -1,9 +1,9 @@
 [package]
-name = "docreader"
-version = "0.1.0"
+name = "libpdf"
+version = "0.1.2"
 license = "ISC"
 edition = "2021"
-exclude = ["index.node"]
+exclude = ["libpdf.node"]
 
 [lib]
 crate-type = ["cdylib"]
