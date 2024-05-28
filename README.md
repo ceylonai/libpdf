@@ -42,7 +42,7 @@ After building `libpdf`, you can explore its exports at the Node REPL.
 
 3. Execute the following commands:
    ```javascript
-   > const pdfFile = require("fs").readFileSync("Dewmal Resume.pdf");
+   > const pdfFile = require("fs").readFileSync("doc.pdf")
    > const doc = require("libpdf").document(pdfFile);
    > console.log(doc);
    ```
@@ -52,7 +52,7 @@ After building `libpdf`, you can explore its exports at the Node REPL.
 1. Create a file named `index.js` with the following content:
 
    ```javascript
-   const pdfFile = require('fs').readFileSync("Dewmal Resume.pdf");
+   const pdfFile = require('fs').readFileSync("doc.pdf");
    const doc = require('libpdf').document(pdfFile);
    console.log(doc);
    ```
