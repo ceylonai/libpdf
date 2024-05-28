@@ -1,8 +1,12 @@
-# docreader
+# LibPdf
 
-This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
+**LibPdf** is a fast and efficient Node.js library for converting PDF files to text. This open-source project aims to simplify the process of extracting text content from PDFs, making it easier for developers to work with PDF data in their applications.
 
-## Installing docreader
+Features
+- Fast PDF to text conversion
+- Easy-to-use API
+
+## Installing libpdf
 
 Installing docreader requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
 
@@ -14,19 +18,14 @@ $ npm install
 
 This fully installs the project, including installing any dependencies and running the build.
 
-## Building docreader
+## Building libpdf
 
 If you have already installed the project and only want to run the build, run:
 
-```sh
-$ npm run build
-```
 
-This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./index.node`.
+## Exploring libpdf
 
-## Exploring docreader
-
-After building docreader, you can explore its exports at the Node REPL:
+After building libpdf, you can explore its exports at the Node REPL:
 
 ```sh
 $ npm install
@@ -36,3 +35,15 @@ $ node
 "<PDF Content Will Print Here>"
 ```
 
+# Future Steps (TODO)
+- Add support for extracting text from specific pages
+- Improve text extraction accuracy for complex PDFs
+- Implement batch processing for multiple PDFs
+- Add CLI support for direct command-line usage
+- Create detailed documentation and examples
+
+# Contributing
+We welcome contributions to improve LibPdf! Feel free to submit issues and pull requests on our GitHub repository.
+
+# License
+This project is licensed under the Apache-2.0 license.
