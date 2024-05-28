@@ -26,13 +26,24 @@ If you have already installed the project and only want to run the build, run:
 ## Exploring libpdf
 
 After building libpdf, you can explore its exports at the Node REPL:
-
+### Using Node Shell
 ```sh
 $ npm install
 $ node
 > const pdfFile = require("fs").readFileSync("Dewmal Resume.pdf")
 > require("./libpdf.node").document(pdfFile)
 "<PDF Content Will Print Here>"
+```
+### Using javascript file
+create file `index.js` with bellow content.
+```javascript
+const file = require('fs').readFileSync("Dewmal Resume.pdf");
+const doc = require('libpdf').document(file);
+console.log(doc);
+```
+then run
+```shell
+node index.js
 ```
 
 # Future Steps (TODO)
