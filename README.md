@@ -70,7 +70,13 @@ This setup ensures you can easily install, build, and explore the capabilities o
 ![Benchmarking PDF Libraries.png](./benchmark%2FBenchmarking%20PDF%20Libraries.png)
 
 ## conclusion
+1. **Best for Small and Medium PDFs**: `libPdf` consistently performs the fastest for small and medium PDF files, showing significant speed advantages over `pdf-lib` and `pdf-parse`.
 
+2. **Balanced Performance**: `pdf-parse` offers a middle-ground performance across all file sizes but is generally slower than `libPdf` for smaller files and `pdf-lib` for medium files.
+
+3. **Inefficiency with Complex PDFs**: `libPdf` shows a notable drop in performance with complex PDFs, taking significantly longer compared to `pdf-parse` and `pdf-lib`.
+
+4. **Library Efficiency**: `pdf-lib` excels with small and medium PDFs but struggles significantly with large and complex documents, making it less suitable for those cases.
 
 
 # Future Steps (TODO)
