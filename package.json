@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cargo-cp-artifact -nc document.node -- cargo build --message-format=json-render-diagnostics",
+    "build": "cargo-cp-artifact -nc libpdf.node -- cargo build --message-format=json-render-diagnostics",
     "build-debug": "bun run build --",
     "build-release": "bun run build -- --release",
     "install:release": "bun run build-release",

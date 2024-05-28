@@ -7,7 +7,7 @@ test('Version', () => {
     expect(version()).toBe("0.0.1")
 })
 test('Document', async () => {
-    const jsonFile = await fs.readFileSync("Dewmal Resume.pdf")
+    const jsonFile = fs.readFileSync("Dewmal Resume.pdf")
     console.log(jsonFile)
     expect(document(jsonFile)).not.toBeNull()
 })
