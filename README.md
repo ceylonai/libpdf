@@ -47,11 +47,11 @@ node index.js
 ```
 
 # Future Steps (TODO)
-- Add support for extracting text from specific pages
-- Improve text extraction accuracy for complex PDFs
-- Implement batch processing for multiple PDFs
-- Add CLI support for direct command-line usage
-- Create detailed documentation and examples
+- [ ] Add support for extracting text from specific pages
+- [ ] Improve text extraction accuracy for complex PDFs
+- [ ] Implement batch processing for multiple PDFs
+- [ ] Add CLI support for direct command-line usage
+- [ ] Create detailed documentation and examples
 
 # Contributing
 We welcome contributions to improve LibPdf! Feel free to submit issues and pull requests on our GitHub repository.
