@@ -6,45 +6,64 @@ Features
 - Fast PDF to text conversion
 - Easy-to-use API
 
-## Installing libpdf
+# Installing libpdf
 
-Installing docreader requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
+To install `libpdf` and its dependencies, ensure you have a supported version of Node installed. You can install the project with npm. In the project directory, run:
 
-You can install the project with npm. In the project directory, run:
-
-```sh
-$ npm install
+```bash
+$ npm install libpdf --save
 ```
 
-This fully installs the project, including installing any dependencies and running the build.
+This command fully installs the project, including installing any dependencies.
 
-## Building libpdf
+# Building libpdf
 
-If you have already installed the project and only want to run the build, run:
+To build `libpdf`, you need to have Rust installed. If you have already installed the project and only want to run the build, use:
 
-
-## Exploring libpdf
-
-After building libpdf, you can explore its exports at the Node REPL:
-### Using Node Shell
-```sh
-$ npm install
-$ node
-> const pdfFile = require("fs").readFileSync("Dewmal Resume.pdf")
-> require("./libpdf.node").document(pdfFile)
-"<PDF Content Will Print Here>"
+```bash
+$ npm run build
 ```
-### Using javascript file
-create file `index.js` with bellow content.
-```javascript
-const file = require('fs').readFileSync("Dewmal Resume.pdf");
-const doc = require('libpdf').document(file);
-console.log(doc);
-```
-then run
-```shell
-node index.js
-```
+
+# Exploring libpdf
+
+After building `libpdf`, you can explore its exports at the Node REPL.
+
+## Using Node Shell
+
+1. Install `libpdf`:
+   ```bash
+   $ npm install libpdf --save
+   ```
+
+2. Open Node REPL:
+   ```bash
+   $ node
+   ```
+
+3. Execute the following commands:
+   ```javascript
+   > const pdfFile = require("fs").readFileSync("Dewmal Resume.pdf");
+   > const doc = require("libpdf").document(pdfFile);
+   > console.log(doc);
+   ```
+
+## Using a JavaScript file
+
+1. Create a file named `index.js` with the following content:
+
+   ```javascript
+   const pdfFile = require('fs').readFileSync("Dewmal Resume.pdf");
+   const doc = require('libpdf').document(pdfFile);
+   console.log(doc);
+   ```
+
+2. Run the file with Node:
+
+   ```bash
+   $ node index.js
+   ```
+
+This setup ensures you can easily install, build, and explore the capabilities of `libpdf`.
 
 # Future Steps (TODO)
 - [ ] Add support for extracting text from specific pages
