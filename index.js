@@ -1,5 +1,4 @@
-const {document, version} = require('./document.node');
-console.log(document);
+const {document, version} = require('./libpdf.node');
 module.exports = {
     version: version,
     document: document
