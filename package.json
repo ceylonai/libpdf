@@ -1,0 +1,23 @@
+{
+  "name": "@repo/docreader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cargo-cp-artifact -nc document.node -- cargo build --message-format=json-render-diagnostics",
+    "build-debug": "bun run build --",
+    "build-release": "bun run build -- --release",
+    "install:release": "bun run build-release",
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cargo-cp-artifact": "^0.1.8",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.8",
+    "neon-loader": "^1.0.0"
+  }
+}
