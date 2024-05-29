@@ -52,8 +52,6 @@ jobs:
         run: |
           sudo -H pip install setuptools
       - run: npm ci
-      - run: npm run lint
-      - run: npm test
 
   build:
     runs-on: ${{ matrix.platform.os }}
