@@ -60,9 +60,9 @@ jobs:
       matrix:
         platform:
           [
-            { os: "ubuntu-latest", cmd: "build:linux" },
-            { os: "macos-11", cmd: "build:macos" },
-            { os: "windows-latest", cmd: "build:windows" },
+            { os: "ubuntu-latest", cmd: "build-release" },
+            { os: "macos-11", cmd: "build-release" },
+            { os: "windows-latest", cmd: "build-release" },
           ]
     steps:
       - name: Checkout code
