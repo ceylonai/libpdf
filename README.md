@@ -72,7 +72,7 @@ This setup ensures you can easily install, build, and explore the capabilities o
 
 # Benchmark Result
 
-![Benchmarking PDF Libraries.png](./benchmark%2FBenchmarking%20PDF%20Libraries.png)
+![Benchmarking PDF Libraries.png](./benchmark/BenchmarkingV0.2.0.png)
 
 ## conclusion
 

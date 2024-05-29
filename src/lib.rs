@@ -5,7 +5,7 @@ use neon::prelude::*;
 use neon::types::buffer::TypedArray;
 
 fn version(mut cx: FunctionContext) -> JsResult<JsString> {
-    Ok(cx.string("0.2.0"))
+    Ok(cx.string("0.2.1"))
 }
 
 
