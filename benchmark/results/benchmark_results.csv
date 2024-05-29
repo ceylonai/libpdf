@@ -1,0 +1,12 @@
+./docs/small.pdf,pdf-parse,68.79760000000002
+./docs/small.pdf,pdf-lib,6.811199999999985
+./docs/small.pdf,libPdf,5.8759000000000015
+./docs/medium.pdf,pdf-parse,32.099800000000016
+./docs/medium.pdf,pdf-lib,4.170600000000036
+./docs/medium.pdf,libPdf,9.916099999999972
+./docs/large.pdf,pdf-parse,223.4237
+./docs/large.pdf,pdf-lib,125.85019999999997
+./docs/large.pdf,libPdf,118.9156999999999
+./docs/complex.pdf,pdf-parse,452.1684
+./docs/complex.pdf,pdf-lib,113.37470000000008
+./docs/complex.pdf,libPdf,88.70979999999986

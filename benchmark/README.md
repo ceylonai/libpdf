@@ -1,41 +1,28 @@
 # benchmark
 
-![Benchmarking PDF Libraries.png](Benchmarking%20PDF%20Libraries.png)
+![Benchmarking PDF Libraries.png](BenchmarkingV0.2.0.png)
 
-Based on the benchmarking results, here are the conclusions in point form:
+Based on the updated benchmarking results, here are the conclusions:
 
-- **Performance Variability Across Libraries**:
-    - `libPdf` consistently showed the fastest performance for small and medium PDF files, but its performance significantly decreased with larger and more complex PDFs.
-    - `pdf-lib` had the lowest processing time for small and medium files but took considerably longer for large and complex PDFs.
-    - `pdf-parse` showed relatively consistent performance but was generally slower compared to `libPdf` and `pdf-lib` for small and medium files.
+1. **Small PDFs**:
+  - `libPdf` (5.88 ms) and `pdf-lib` (6.81 ms) both performed significantly faster than `pdf-parse` (68.80 ms).
+  - `libPdf` showed the best performance with a slight advantage over `pdf-lib`.
 
-- **Small PDFs**:
-    - `libPdf`: 2.00 ms
-    - `pdf-lib`: 6.40 ms
-    - `pdf-parse`: 65.56 ms
-    - `libPdf` performed the best, followed by `pdf-lib`, with `pdf-parse` being the slowest.
+2. **Medium PDFs**:
+  - `pdf-lib` (4.17 ms) was the fastest, followed by `libPdf` (9.92 ms).
+  - `pdf-parse` (32.10 ms) was slower compared to both `libPdf` and `pdf-lib`.
 
-- **Medium PDFs**:
-    - `pdf-lib`: 4.35 ms
-    - `pdf-parse`: 29.16 ms
-    - `libPdf`: 36.42 ms
-    - `pdf-lib` was the fastest, with `pdf-parse` being significantly faster than `libPdf`.
+3. **Large PDFs**:
+  - `libPdf` (118.92 ms) and `pdf-lib` (125.85 ms) had similar performance, with `libPdf` being slightly faster.
+  - `pdf-parse` (223.42 ms) was the slowest for large PDFs.
 
-- **Large PDFs**:
-    - `libPdf`: 145.73 ms
-    - `pdf-parse`: 216.32 ms
-    - `pdf-lib`: 612.95 ms
-    - `libPdf` had the best performance, followed by `pdf-parse`, with `pdf-lib` being the slowest by a large margin.
+4. **Complex PDFs**:
+  - `libPdf` (88.71 ms) significantly outperformed `pdf-lib` (113.37 ms) and `pdf-parse` (452.17 ms).
+  - `libPdf` showed the best performance for complex PDFs, followed by `pdf-lib`.
 
-- **Complex PDFs**:
-    - `pdf-parse`: 447.64 ms
-    - `pdf-lib`: 548.89 ms
-    - `libPdf`: 1848.26 ms
-    - `pdf-parse` showed the best performance, followed by `pdf-lib`, with `libPdf` taking the longest time.
+### Overall Summary:
 
-- **Overall Observations**:
-    - `libPdf` excels with smaller and simpler PDFs but struggles with more complex documents.
-    - `pdf-lib` is efficient for smaller files but not suitable for large or complex PDFs.
-    - `pdf-parse` offers a balanced performance but is not the fastest for any specific type of PDF.
-
-These conclusions can help guide the selection of a PDF processing library based on the specific requirements of file size and complexity.
+- **Best Overall Performance**: `libPdf` consistently showed the best performance across different PDF sizes and complexities.
+- **Efficient for Small and Medium PDFs**: `pdf-lib` performed very efficiently for small and medium PDFs, closely following `libPdf`.
+- **Consistent Performance**: `pdf-parse` demonstrated consistent performance but was generally slower than both `libPdf` and `pdf-lib` across all test cases.
+- **Significant Performance Gaps**: The performance gaps between the libraries are more pronounced in larger and more complex PDFs, highlighting the strengths of `libPdf` in handling such documents efficiently.
