@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "cargo-cp-artifact -nc libpdf.node -- cargo build --message-format=json-render-diagnostics",
-    "build-debug": "bun run build --",
-    "build-release": "bun run build -- --release",
-    "install:release": "bun run build-release",
+    "build-debug": "npm run build --",
+    "build-release": "npm run build -- --release",
+    "install:release": "npm run build-release",
     "test": "vitest"
   },
   "author": "dewmal@ceylon.ai",
